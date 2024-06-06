@@ -7,14 +7,14 @@ public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
-    public String name;
+    public String nombre;
     public int telefono;
     public String direccion;
     public int cedula;
 
-    public Users(int id, String name, int telefono, String direccion, int cedula) {
+    public Users(int id, String nombre, int telefono, String direccion, int cedula) {
         this.id = id;
-        this.name = name;
+        this.nombre = nombre;
         this.telefono = telefono;
         this.direccion = direccion;
         this.cedula = cedula;
@@ -28,12 +28,12 @@ public class Users {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getTelefono() {

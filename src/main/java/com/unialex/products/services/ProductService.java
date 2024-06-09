@@ -12,4 +12,6 @@ public interface ProductService {
     Product createProduct(Product product);
     Product updateProduct(Product product);
     void deleteProduct(Product product);
+    String getMoreExpensive();
+    List<Product> getMoreExpenciveThan5000();
 }

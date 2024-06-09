@@ -1,6 +1,7 @@
 package com.unialex.products.models;
 
 import jakarta.persistence.*;
+import org.apache.catalina.User;
 
 @Entity
 public class Users {
@@ -18,6 +19,9 @@ public class Users {
         this.telefono = telefono;
         this.direccion = direccion;
         this.cedula = cedula;
+    }
+    public Users(){
+
     }
 
     public int getId() {

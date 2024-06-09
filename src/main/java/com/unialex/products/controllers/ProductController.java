@@ -52,4 +52,15 @@ public class ProductController {
         productServiceImpl.deleteProduct(product);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping(value = "product/expensive")
+    public ResponseEntity<String> getMoreExpensive(){
+        String productName = productServiceImpl.getMoreExpensive();
+        return ResponseEntity.ok(productName);
+    }
+    @GetMapping(value ="product/expensive/than")
+    public ResponseEntity<List<Product>> getMoreExpensiveThan5000(){
+        List<Product> products=productServiceImpl.getMoreExpenciveThan5000();
+        return ResponseEntity.ok(products);
+    }
 }
